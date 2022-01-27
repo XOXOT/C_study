@@ -42,5 +42,8 @@
     <ClCompile Include="1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="answer(학생성적관리).c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
