@@ -15,23 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\pknu\Desktop\자료구조\Data_Structure_Src\Ch02\RecursiveFunc.c">
+    <ClCompile Include="ArrayList.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="recutest.c">
+    <ClCompile Include="ListMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\pknu\Desktop\자료구조\Data_Structure_Src\Ch02\RecursiveFactorial.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="FibonacciFunc.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Recursive01.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\pknu\Desktop\자료구조\Data_Structure_Src\Ch02\HanoiTowerSolu.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ArrayList.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
