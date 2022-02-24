@@ -21,5 +21,17 @@
     <ClCompile Include="LinkedRead.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="단순 연결리스트%28정적%29.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="단순 연결리스트(동적).c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="노드 생성 함수.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="단방향 연결리스트.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -10,10 +10,10 @@ typedef struct _node
 int main(void)
 {
 	Node *head = NULL;    // NULL 포인터 초기화
-	Node *tail = NULL;
+	Node *tail = NULL; 
 	Node *cur = NULL;
 
-	Node * newNode = NULL;
+	Node * newNode = NULL; //새로운 노드를 만듬(NODE1)
 	int readData;
 
 	/**** 데이터를 입력 받는 과정 ****/
@@ -26,6 +26,12 @@ int main(void)
 
 		/*** 노드의 추가과정 ***/
 		newNode = (Node*)malloc(sizeof(Node));
+
+		if (newNode == NULL) //역참조 방지코드
+		{
+			return;
+		}
+
 		newNode->data = readData;
 		newNode->next = NULL;
 
