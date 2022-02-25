@@ -33,5 +33,11 @@
     <ClCompile Include="단방향 연결리스트.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="양방향 연결리스트.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="원형 연결리스트.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -24,15 +24,24 @@ int main(void)
 		return;
 	}
 
-	head->next = NULL; //head->next 값 초기화
+	Node* search = (Node*)malloc(sizeof(Node));
+	if (head != NULL)
+	{
+		head->next = NULL; //head->next 값 초기화;
+	}
+
 	pre_insertNode(head,10);
-	rear_insertNode(head,30);
+	//rear_insertNode(head,10);
+	rear_insertNode(head, 20);
+	rear_insertNode(head, 30);
 
 	printNode(head);
 	searchNode(head, 20);
 	searchNode(head, 30);
 
-	deleteNode(head, 30);
+	printf("\n삭제 후\n");
+	search = searchNode(head, 20);
+	deleteNode(head, search);
 
 	freeNode(head);
 
@@ -93,7 +102,8 @@ void printNode(Node* h)
 //데이터 프리 (동적해제함수)
 void freeNode(Node* h)
 {
-	//Node* curr;
+	Node* curr;
+
 	////방법 1
 	//curr = h; //head노드 공간을 해제해버리면 다음 노드 주소를 알 수 없기 때문에 변수 저장 
 	//while (curr != NULL)
@@ -103,25 +113,28 @@ void freeNode(Node* h)
 	//	free(curr);
 	//	curr = nc;
 	//}
-	////방법 2
-	//while (h->next == NULL)
-	//{
-	//	curr = h->next;//head노드 공간을 해제해버리면 다음 노드 주소를 알 수 없기 때문에
-	//	h->next = h->next->next;
-	//	free(curr);
-	//	curr = NULL;
-	//}
-	//free(h);
-
-	//방법 3
-	Node* target = h; //해제할 노드의 주소를 저장하는 변수
-	Node* temp = target; //해제할 노드의 다음 노드 주소
-	while (target != NULL) //
+	//방법 2
+	while (h->next == NULL)
 	{
-		temp = temp->next; //해제하기 전 temp 변수에 다음 노드 주소를 미리 저장
-		free(target);
-		target = temp;// 해제하기 전에 저장한 temp 변수를 다시 target에 저장하고 반복
+		curr = h->next;//head노드 공간을 해제해버리면 다음 노드 주소를 알 수 없기 때문에
+		h->next = h->next->next;
+		printf("\n%d 삭제", curr->data);
+		free(curr);
+		curr = NULL;
 	}
+	free(h);
+	printf("\n전체 삭제 완료!\n");
+
+	////방법 3
+	//Node* target = h; //해제할 노드의 주소를 저장하는 변수
+	//Node* temp = target; //해제할 노드의 다음 노드 주소
+	//while (target != NULL) //
+	//{
+	//	temp = temp->next; //해제하기 전 temp 변수에 다음 노드 주소를 미리 저장
+	//	printf("\n%d 삭제", temp->data);
+	//	free(target);
+	//	target = temp;// 해제하기 전에 저장한 temp 변수를 다시 target에 저장하고 반복
+	//}
 	
 }
 
@@ -158,11 +171,10 @@ void deleteNode(Node* h, Node *p)
 		}
 		curr->next = p->next; // 삭제할 노드의 다음노드를 현재 노드의 next에 연결
  	}
-	free(p); //삭제할 노드 해제
-
 	printNode(h);
 
 	printf("찾으시는 값을 삭제했습니다.\n");
+	free(p); //삭제할 노드 해제
 
 }
 
