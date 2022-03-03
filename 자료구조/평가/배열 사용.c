@@ -1,15 +1,11 @@
-//Alphabet_sort.c
-//created: 2022.03.03
-//Author: ÃÖÈñÅÂ
-
-//¹è¿­ »ç¿ë
+//ë°°ì—´ ì‚¬ìš©
 
 #include <stdio.h>
 #include <string.h>
 #define MAX_LENGTH 10
 
-void insertionSort(char*, int); //»ğÀÔÁ¤·Ä
-void printUL(char*, int); //Æ÷ÀÎÅÍ ¹è¿­ ÀüÃ¼ °ª Ãâ·Â
+void insertionSort(char*, int); //ì‚½ì…ì •ë ¬
+void printUL(char*, int); //í¬ì¸í„° ë°°ì—´ ì „ì²´ ê°’ ì¶œë ¥
 
 int main(void)
 {
@@ -17,17 +13,17 @@ int main(void)
 	char lower_ary[MAX_LENGTH];
 	char upper_ary[MAX_LENGTH];
 
-	int UPcount = 0; //´ë¹®ÀÚ Ä«¿îÆ®
-	int LOWcount = 0; //¼Ò¹®ÀÚ Ä«¿îÆ®
+	int UPcount = 0; //ëŒ€ë¬¸ì ì¹´ìš´íŠ¸
+	int LOWcount = 0; //ì†Œë¬¸ì ì¹´ìš´íŠ¸
 
 	printf("============================================\n");
-	printf("\t¾ËÆÄºª Ãâ·Â ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.\n\n");
-	printf("  ¾ËÆÄºª 10°³¸¦ ÀÔ·ÂÇÏ¸é ÀÚµ¿ Ãâ·Â µË´Ï´Ù.");
+	printf("\tì•ŒíŒŒë²³ ì¶œë ¥ í”„ë¡œê·¸ë¨ ì…ë‹ˆë‹¤.\n\n");
+	printf("  ì•ŒíŒŒë²³ 10ê°œë¥¼ ì…ë ¥í•˜ë©´ ìë™ ì¶œë ¥ ë©ë‹ˆë‹¤.");
 	printf("\n============================================\n");
 
 	for (int i = 0; i < MAX_LENGTH; i++)
 	{
-		printf("\n¾ËÆÄºªÀ» ÇÏ³ª¾¿ ÀÔ·ÂÇÏ¼¼¿ä ->");
+		printf("\nì•ŒíŒŒë²³ì„ í•˜ë‚˜ì”© ì…ë ¥í•˜ì„¸ìš” ->");
 		scanf(" %c", &input_ary[i]);
 	}
 
@@ -48,10 +44,10 @@ int main(void)
 	insertionSort(upper_ary, UPcount);
 	insertionSort(lower_ary, LOWcount);
 	printf("\n\n============================================\n");
-	printf("Ãâ·Â¿Ï·á!\n");
-	printf("\n´ë¹®ÀÚ : ");
+	printf("ì¶œë ¥ì™„ë£Œ!\n");
+	printf("\nëŒ€ë¬¸ì : ");
 	printUL(upper_ary, UPcount);
-	printf("\n¼Ò¹®ÀÚ : ");
+	printf("\nì†Œë¬¸ì : ");
 	printUL(lower_ary, LOWcount);
 	printf("\n============================================\n");
 
@@ -67,7 +63,7 @@ void insertionSort(char* arr, int count)
 		{
 			if (arr[j - 1] > arr[j])
 			{
-				charData = arr[j - 1]; // ºñ±³ ´ë»ó ÇÑ Ä­ µÚ·Î ¹Ğ±â
+				charData = arr[j - 1]; // ë¹„êµ ëŒ€ìƒ í•œ ì¹¸ ë’¤ë¡œ ë°€ê¸°
 				arr[j - 1] = arr[j];
 				arr[j] = charData;
 			}
