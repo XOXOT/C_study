@@ -1,8 +1,5 @@
-//Alphabet_sort.c
-//created: 2022.03.03
-//Author: ÃÖÈñÅÂ
 
-//¿¬°á¸®½ºÆ® »ç¿ë
+//ì—°ê²°ë¦¬ìŠ¤íŠ¸ ì‚¬ìš©
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -70,15 +67,15 @@ void printNode(HeadNode* h)
 
 	//while (curr != NULL)
 	//{
-	//	printf("%d¹øÂ° ³ëµå µ¥ÀÌÅÍ %c\n", i, curr->alpabet);
+	//	printf("%dë²ˆì§¸ ë…¸ë“œ ë°ì´í„° %c\n", i, curr->alpabet);
 	//	curr = curr->next;
 	//	i++;
 	//}
 	//curr = h->head;
 
-	//printf("\n´ë¹®ÀÚ°¡ µé¾î°£ ³ëµå µ¥ÀÌÅÍ : ");
+	//printf("\nëŒ€ë¬¸ìê°€ ë“¤ì–´ê°„ ë…¸ë“œ ë°ì´í„° : ");
 
-	printf("\n´ë¹®ÀÚ : ");
+	printf("\nëŒ€ë¬¸ì : ");
 	while (curr != NULL)
 	{
 		if (curr->alpabet >= 'A' && curr->alpabet <= 'Z')
@@ -87,9 +84,9 @@ void printNode(HeadNode* h)
 	}
 	curr = h->head;
 
-	//printf("\n¼Ò¹®ÀÚ°¡ µé¾î°£ ³ëµå µ¥ÀÌÅÍ : ");
+	//printf("\nì†Œë¬¸ìê°€ ë“¤ì–´ê°„ ë…¸ë“œ ë°ì´í„° : ");
 
-	printf("\n¼Ò¹®ÀÚ : ");
+	printf("\nì†Œë¬¸ì : ");
 	while (curr != NULL)
 	{
 		if (curr->alpabet >= 'a' && curr->alpabet <= 'z')
@@ -107,11 +104,11 @@ int main()
 	int j = 0, k = 0;
 
 	printf("===========================================================\n");
-	printf("¾ËÆÄºª Ãâ·Â ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.\n\n");
-	printf("¾ËÆÄºª 10°³ ÀÌ»ó ÀÔ·ÂÇØµµ Á¤·Ä ¹× Ãâ·ÂÀº 10°³¸¸ µË´Ï´Ù.\n");
+	printf("ì•ŒíŒŒë²³ ì¶œë ¥ í”„ë¡œê·¸ë¨ ì…ë‹ˆë‹¤.\n\n");
+	printf("ì•ŒíŒŒë²³ 10ê°œ ì´ìƒ ì…ë ¥í•´ë„ ì •ë ¬ ë° ì¶œë ¥ì€ 10ê°œë§Œ ë©ë‹ˆë‹¤.\n");
 	printf("===========================================================\n");
 
-	printf("\n¾ËÆÄºªÀ» ÇÑ ÁÙ·Î ÀÔ·ÂÇÏ¼¼¿ä ->");
+	printf("\nì•ŒíŒŒë²³ì„ í•œ ì¤„ë¡œ ì…ë ¥í•˜ì„¸ìš” ->");
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -139,7 +136,7 @@ void insertionSort(char* arr, int count)
 			if (arr[j - 1] > arr[j])
 			{
 
-				temp = arr[j - 1]; // ºñ±³ ´ë»ó ÇÑ Ä­ µÚ·Î ¹Ğ±â
+				temp = arr[j - 1]; // ë¹„êµ ëŒ€ìƒ í•œ ì¹¸ ë’¤ë¡œ ë°€ê¸°
 				arr[j - 1] = arr[j];
 				arr[j] = temp;
 			}
