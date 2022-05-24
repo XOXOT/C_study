@@ -1,7 +1,7 @@
 # 💻 C 학습 리퍼지토리 💻
 ##### 📖 혼자 공부하는 C언어, 열혈 자료구조 📖
 
-#### 자료구조
+### 📁 자료구조 📁
 ___ 
 #### 1장 - [워밍업](https://github.com/XOXOT/C_study/tree/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Chapter1(%EC%9B%8C%EB%B0%8D%EC%97%85))
 #### 2장 - [재귀](https://github.com/XOXOT/C_study/tree/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Chapter2(%EC%9E%AC%EA%B7%80))
