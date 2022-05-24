@@ -1340,7 +1340,7 @@ int toolmenu4() {
 		scanf("%s", del_choose);
 		for (i = 0; i < num_check_tool; i++) {
 			if (strcmp(tool[i].model, del_choose) == 0) {
-				printf("삭제하시겠습니까 ? (1.YES / 2.NO)\n 번호 입력 : ");
+				printf("복구하시겠습니까 ? (1.YES / 2.NO)\n 번호 입력 : ");
 				scanf("%d", &del_check);
 				if (del_check == 1) {
 					printf("복구되었습니다.\n");
