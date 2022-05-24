@@ -21,13 +21,13 @@ ___
 ##### [연결리스트 사용](https://github.com/XOXOT/C_study/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/%ED%8F%89%EA%B0%80/%EC%97%B0%EA%B2%B0%EB%A6%AC%EC%8A%A4%ED%8A%B8%20%EC%82%AC%EC%9A%A9.c)
 
 ### <메인화면>
-![Test](https://github.com/XOXOT/Cpp_Study/blob/main/img/%EB%A9%94%EC%9D%B8%20%ED%99%94%EB%A9%B4.png)
+![Test](https://github.com/XOXOT/C_study/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/img/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.png)
 
-### <상품추가>
-![Test](https://github.com/XOXOT/Cpp_Study/blob/main/img/%EC%83%81%ED%92%88%EC%B6%94%EA%B0%80.png)
+### <입력화면>
+![Test](https://github.com/XOXOT/C_study/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/img/%EC%9E%85%EB%A0%A5%ED%99%94%EB%A9%B4.png)
 
-### <상품조회>
-![Test](https://github.com/XOXOT/Cpp_Study/blob/main/img/%EC%83%81%ED%92%88%20%EC%A1%B0%ED%9A%8C.png)
+### <구별완료화면>
+![Test](https://github.com/XOXOT/C_study/blob/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/img/%EC%99%84%EB%A3%8C%ED%99%94%EB%A9%B4.png)
 
 
 ## [🔙BACK](https://github.com/XOXOT?tab=repositories)
