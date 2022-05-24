@@ -1,6 +1,9 @@
 # 💻 C 학습 리퍼지토리 💻
 ##### 📖 혼자 공부하는 C언어, 열혈 자료구조 📖
 
+### 📝 C언어 학생성적관리 프로그램 📝
+<img src = https://github.com/XOXOT/C_study/blob/master/C%EA%B8%B0%EB%B3%B8/img/%ED%95%99%EC%83%9D%EC%84%B1%EC%A0%81%EA%B4%80%EB%A6%AC.gif>
+
 ### 📁 자료구조 📁
 ___ 
 #### 1장 - [워밍업](https://github.com/XOXOT/C_study/tree/master/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Chapter1(%EC%9B%8C%EB%B0%8D%EC%97%85))
